@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(46, 45, 42);
+}
+.nav{
+    top:20px;
+    right: 370px;
+    position: absolute;
+}
+.logo{
+    font-size: 20px;
+    color: rgb(251, 251, 251);
+    font-family:Arial, Helvetica, sans-serif ;
+    padding: 20px;
+    padding-left: 70px;
+}
+.nav a{
+    position: relative;
+    margin-left: 50px;
+    color: rgb(251, 251, 251);
+    font-family:Arial, Helvetica, sans-serif ;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav span::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:3px;
+    background: rgb(251, 251, 251);
+    border-radius: 5px ;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav span:hover::after{
+    transform: scaleX(1);
+}
+.container{
+    position:absolute;
+    top: 75px;
+    left:3%;
+    height: 380px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.171);
+    z-index: 10px;
+}
+.year{
+    font-size: 15px;
+}
+.para{
+    position: absolute;
+    top:30px;
+    left: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+ul{
+    position:relative;
+    top:40px;
+    font-size: 20px;
+    width:315px;
+}
+.block{
+    position: absolute;
+    left:15px;
+    height: 485px;
+    width:1250px;
+}
+.container1{
+    position:absolute;
+    top: 75px;
+    left:36%;
+    height: 380px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.171);
+    z-index: 10px;
+}
+.container2{
+    position:absolute;
+    top: 75px;
+    left:69%;
+    height: 380px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.171);
+    z-index: 10px;
+}
+.img{
+    position: absolute;
+    left:130%;
+    top:-5px;
+}
